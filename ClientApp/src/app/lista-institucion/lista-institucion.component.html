@@ -1,0 +1,23 @@
+
+    <div>
+        <table class='table table-striped'>
+        <thead>
+        <tr>
+        <tr>
+        <th>Id</th>
+        <th>Tipo de Identificacion</th>
+        <th>nombre</th>
+         <th> Nombre De Institucion</th>
+        <th> Plazas</th>
+        </tr>
+        </thead>
+        <tr *ngFor="let Docentes of docentes">
+        <td>{{Docentes.id}}</td>
+        <td>{{Docentes.tipo}}</td>
+        <td>{{Docentes.nombre}}</td>
+        <td>{{Docentes.institucion.nombreie}}</td>
+        <td>{{Docentes.institucion.Plazas}}</td>
+        </tr>
+        </table>
+        </div>
+    

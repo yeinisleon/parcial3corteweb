@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Task Add </h1>
+</div>
+<p>Aplicación para agregar Docentes</p>
+
+<div class="form-group">
+    <label>Tipo De Cedula
+        <input [(ngModel)]="docente.tipo" class="form-control" placeholder="digite el Tipo" type="text" />
+    </label>
+</div>
+
+
+<div class="form-group">
+    <label>Cedula
+        <input [(ngModel)]="docente.numerodeid" class="form-control" placeholder="digite el Tipo" type="text" />
+    </label>
+</div>
+
+
+<div class="form-group">
+    <label>Nombre:
+        <input [(ngModel)]="docente.nombre" class="form-control" placeholder="digite Nombre " type="text" />
+    </label>
+</div>
+
+<div class="form-group">
+    <label>Profesion:
+        <input [(ngModel)]="docente.profesion" class="form-control" placeholder="digite La Profesion " type="text" />
+    </label>
+</div>
+
+<div class="form-group">
+    <label>Digite ID de la institucion:
+        <input [(ngModel)]="docente.IdInstituciones" class="form-control" placeholder="digite Id De Insti "
+            type="number" />
+    </label>
+</div>
+
+<div class="form-group">
+    <button (click)="add()" class="btn btn-primary">Agregar</button>
+</div>
